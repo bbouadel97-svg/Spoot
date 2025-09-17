@@ -16,7 +16,6 @@ class Program
     public static void chapitre_titre()
     {
         //Contenu du chapitre
-        String choix;
         String Titre;
         //Votre déroulé d'aventure
         Titre = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ascii-art.txt");
@@ -29,7 +28,6 @@ class Program
     public static void Scène1()
     {
         //Contenu du chapitre
-        String choix;
         String Scene1;
         //Votre déroulé d'aventure
         Scene1 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène1\texte scène1.txt");
@@ -105,7 +103,7 @@ class Program
             Scene3 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène3\reussi scene3.txt");
                 Console.WriteLine(Scene3);
                 Console.ReadLine();
-                chapitre_titre();
+                Scene4();
                 break;
             default:
                 Console.WriteLine("Choix invalide, veuillez réessayer.");
@@ -113,15 +111,6 @@ class Program
                 Scène3();
                 break;
         }
-
-        //Contenu du chapitre
-
-
-        //Votre déroulé d'aventure
-
-        //Scene2 = File.ReadAllText(@"");
-        //Console.WriteLine(Scene2);
-
         Console.ReadLine();
     }
 }
