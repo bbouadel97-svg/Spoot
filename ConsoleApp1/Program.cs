@@ -9,6 +9,7 @@ class Program
     static void Main(string[] args)
     {
        chapitre_titre(); 
+        Scène1();
 
     }
     public static void chapitre_titre()
@@ -24,6 +25,16 @@ class Program
         Console.WriteLine(Titre2);
         Console.ReadLine();
     }
+    public static void Scène1()
+    {
+        //Contenu du chapitre
+         String choix;
+        String Scene1_1;
+        //Votre déroulé d'aventure
+        Scene1_1 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ascii-art.txt");
+        Console.WriteLine(Scene1_1);
+        
+        Console.ReadLine();
 
 }
 
