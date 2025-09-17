@@ -20,21 +20,24 @@ class Program
         //Votre déroulé d'aventure
         Titre = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ascii-art.txt");
         Console.WriteLine(Titre);
-        String Titre2;
-        Titre2 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ecran_titre.txt");
-        Console.WriteLine(Titre2);
+        //String Titre2;
+        Titre = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ecran_titre.txt");
+        Console.WriteLine(Titre);
         Console.ReadLine();
     }
     public static void Scène1()
     {
         //Contenu du chapitre
-         String choix;
-        String Scene1_1;
+        String choix;
+        String Scene1;
         //Votre déroulé d'aventure
-        Scene1_1 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ascii-art.txt");
-        Console.WriteLine(Scene1_1);
-        
+        Scene1 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène1\texte scène1.txt");
+        Console.WriteLine(Scene1);
+        Scene1 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène1\image scène1.txt");
+        Console.WriteLine(Scene1);
+
         Console.ReadLine();
+    }
 
 }
 
