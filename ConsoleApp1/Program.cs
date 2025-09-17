@@ -16,6 +16,8 @@ class Program
         String Titre2;
         Titre2 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ecran_titre.txt");
         Console.WriteLine(Titre2);
+        Console.ReadLine();
+
     }
 }
 
