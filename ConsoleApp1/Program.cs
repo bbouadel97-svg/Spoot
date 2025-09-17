@@ -53,16 +53,18 @@ class Program
             case "1":
                 //Chapitre 1
                 Scene2 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scene2\image scene2.txt");
-        Console.WriteLine(Scene2);
-        //bon choix (chambre)
+                Console.WriteLine(Scene2);
+                Console.ReadLine();
+                Scène3();
+                //bon choix (chambre)
                 break;
             case "2":
                 string Scene2_1;
                 Scene2_1 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\Game over\Game Over.txt");
-        Console.WriteLine(Scene2_1);
-        Scene2 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scene2\game over .txt");
-        Console.WriteLine(Scene2);
-        Console.ReadLine();
+                Console.WriteLine(Scene2_1);
+                Scene2 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scene2\game over .txt");
+                Console.WriteLine(Scene2);
+                Console.ReadLine();
                 //gameover
                 //relancer jeu
                 chapitre_titre();
@@ -72,13 +74,51 @@ class Program
                 //Relancer le jeu ou le chapitre en cours
                 Scène2();
                 break;
+
+        }
+    }
+         public static void Scène3()
+    {
+        string choix;
+        string Scene3;
+        Scene3 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène3\question.txt");
+        Console.WriteLine(Scene3);
+        Scene3 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène3\choix sc3.txt");
+        Console.WriteLine(Scene3);
+        Console.Write("Choisissez une option : 1 ou 2 ");
+        choix = Console.ReadLine().ToLower();
+
+        switch (choix)
+        {
+            case "1":
+                string Scene3_1;
+                Scene3_1 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\Game over\Game Over.txt");
+                Console.WriteLine(Scene3_1);
+                Scene3_1 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène3\mort.txt");
+                Console.WriteLine(Scene3_1);
+                Console.ReadLine();
+                chapitre_titre();
+                
+                
+                break;
+            case "2":
+            Scene3 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène3\reussi scene3.txt");
+                Console.WriteLine(Scene3);
+                Console.ReadLine();
+                chapitre_titre();
+                break;
+            default:
+                Console.WriteLine("Choix invalide, veuillez réessayer.");
+                //Relancer le jeu ou le chapitre en cours
+                Scène3();
+                break;
         }
 
         //Contenu du chapitre
-        
-        
+
+
         //Votre déroulé d'aventure
-        
+
         //Scene2 = File.ReadAllText(@"");
         //Console.WriteLine(Scene2);
 
