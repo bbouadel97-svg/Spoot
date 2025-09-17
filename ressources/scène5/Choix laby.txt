@@ -1,0 +1,3 @@
+Vous vous retrouvez face a un labyrinthe, que faites vous
+Choix 1: je suis mon instinct
+Choix 2: je suis toujours un même mur 
