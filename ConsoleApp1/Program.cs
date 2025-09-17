@@ -9,10 +9,13 @@ class Program
     static void Main(string[] args)
     {
         String choix;
-        String texte;
+        String Titre;
         //Votre déroulé d'aventure
-        texte = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\txt.txt");
-Console.WriteLine(texte);
+        Titre = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ascii-art.txt");
+        Console.WriteLine(Titre);
+        String Titre2;
+        Titre2 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ecran_titre.txt");
+        Console.WriteLine(Titre2);
     }
 }
 
