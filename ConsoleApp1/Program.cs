@@ -103,7 +103,7 @@ class Program
             Scene3 = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\scène3\reussi scene3.txt");
                 Console.WriteLine(Scene3);
                 Console.ReadLine();
-                Scene4();
+                //Scene4();
                 break;
             default:
                 Console.WriteLine("Choix invalide, veuillez réessayer.");
