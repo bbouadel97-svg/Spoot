@@ -8,14 +8,14 @@ class Program
 {
     static void Main(string[] args)
     {
-       chapitre_titre(); 
+        chapitre_titre();
         Scène1();
 
     }
     public static void chapitre_titre()
     {
         //Contenu du chapitre
-         String choix;
+        String choix;
         String Titre;
         //Votre déroulé d'aventure
         Titre = File.ReadAllText(@"C:\Users\xeral\Documents\git\Spoot\ressources\ascii-art.txt");
